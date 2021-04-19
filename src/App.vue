@@ -1,12 +1,15 @@
 <template>
-
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/branch">Branch</router-link> |
+  <div id="nav" class="bg-gradient-to-br from-yellow-200 to-yellow-50">
+    |<router-link class="px-2" to="/">Home</router-link> |
+    <router-link class="px-2" to="/about">About</router-link> |
+    <router-link class="px-2" to="/branch">Branch</router-link> |
   </div>
-  <router-view/>
+  <router-view />
 </template>
+
+<script>
+export default {};
+</script>
 
 <style>
 #app {
