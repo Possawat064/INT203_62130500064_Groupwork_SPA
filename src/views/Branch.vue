@@ -1,11 +1,15 @@
 <template>
   <div
-    class="flex flex-col justify-center w-3/4 shadow-xl rounded-lg p-2 branch"
+    class="flex flex-col justify-items-start shadow-xl rounded-lg p-2 branch"
   >
-    <h1 class="font-semibold text-lg tracking-widest">BRANCHES</h1>
-    <p>Find your nearest branches</p>
+    <h1 class="text-gray-900 text-opacity-100 font-semibold text-xl tracking-widest">BRANCHES</h1>
+    <p class="text-gray-900 text-opacity-100 font-semibold text-xl">Find your nearest branches</p>
     <ul>
-      <branch-list v-for="i in DataBranchs" :key="i.id" :i="i"></branch-list>
+      <branch-list
+        v-for="i in DataBranchs"
+        :key="i.id"
+        :DataBranchs="i"
+      ></branch-list>
     </ul>
   </div>
 </template>
@@ -44,3 +48,4 @@ export default {
   },
 };
 </script>
+
