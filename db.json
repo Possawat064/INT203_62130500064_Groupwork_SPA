@@ -1,0 +1,34 @@
+{
+    "Menu": [
+        {
+            "name": "Shibuya Honey Toast",
+            "type": "Toast",
+            "id": 1
+        },
+        {
+            "name": "Sticky Toffee Toast",
+            "type": "Toast",
+            "id": 2
+        },
+        {
+            "name": "Souffle Cheesecake",
+            "type": "Desserts",
+            "id": 3
+        },
+        {
+            "name": "Buttermilk Pancake",
+            "type": "Breakfast",
+            "id": 4
+        },
+        {
+            "name": "Boba Brown Sugar",
+            "type": "Beverages",
+            "id": 5
+        },
+        {
+            "name": "Two Tone Kakigori",
+            "type": "Kakigori",
+            "id": 6
+        }
+    ]
+}
