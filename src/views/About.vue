@@ -9,9 +9,9 @@
         width="100"
         height="80"
       />
-      <div class="text-gray-900 text-opacity-100 font-semibold text-xl">
-        <p>62130500064</p>
-        <p>นายพศวัต ทานาม</p>
+      <div class="text-gray-900 text-opacity-100 font-semibold text-xl text-center">
+        <p class="pt-6"> Student ID :62130500064</p>
+        <p>Name : นายพศวัต ทานาม</p>
         <p>คณะเทคโนโลยีสารสนเทศ</p>
         <p>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี (บางมด)</p>
       </div>

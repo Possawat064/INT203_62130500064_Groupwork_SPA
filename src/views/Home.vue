@@ -1,17 +1,16 @@
 <template>
-  <div class="bg-white h-screen home">
-    <h1 class="text-4xl pt-16 pb-16 text-center font-bold">Menu</h1>
-    <div class="container pl-72 text-2xl mb-16 border-2">
+  <div class="bg-green-50 h-screen home">
+    <h1 class="text-4xl pt-8 pb-8 text-center font-bold bg-gradient-to-tr from-yellow-200 to-yellow-50 border-4">Menu</h1>
+    <div class="container text-2xl mb-16 max-w-full">
       <div class="Menu-container">
 
-        <form @submit.prevent="submitForm">
-          <base-card>
-            <h2 class="heading pl-16 text-3xl mb-4 mt-4 font-bold">Add Menu</h2>
+        <form @submit.prevent="submitForm" class="flex justify-center border-4 border-green-400 py-2 rounded-xl shadow p-2 my-1">
+            <h2 class="heading text-3xl mb-4 mt-4 font-bold pr-8">Add Menu</h2>
 
-            <label class="label" for="name">Menu Name </label>
+            <label class="label pr-4" for="name">Menu Name</label>
 
             <input
-              class="input"
+              class="input border-4 border-green-400 rounded-xl"
               :class="{ 'bg-red-50': invalidMenuNameInput }"
               id="name"
               type="text"
@@ -23,10 +22,10 @@
               Please enter Menu name!
             </p>
 
-            <label class="label" for="type"> Type </label>
+            <label class="label pr-4" for="type"> Type </label>
 
             <input
-              class="input"
+              class="input border-4 border-green-400 rounded-xl"
               :class="{ 'bg-red-50': invalidTypeInput }"
               id="type"
               type="text"
@@ -41,26 +40,26 @@
             <button class="btn bg-green-500 text-white py-2 px-4 rounded ml-8">
               Add Menu
             </button>
-          </base-card>
         </form>
       </div>
     </div>
 
-    <div class="pl-72 pr-72 text-2xl">
+    <div class="pl-72 pr-72 text-2xl py-4">
       <ul v-for="food in Menu" :key="food.id">
-        <base-card>
-          <li>
+          <li class="border-4 border-green-400 py-4 rounded-xl">
             Menu Name :
-            <span>{{ food.name }}</span> | Type :
+            <span class="pr-4">{{ food.name }}</span> | Type :
             <span> {{ food.type }}</span>
+          <base-card>
             <button @click="showData(food)" class="bg-green-500 m-1">
-              <img src="../assets/edit.svg" alt="" />
+              <img src="../assets/edit.svg" alt="" width="20" height="12"/>
             </button>
             <button @click="deleteMenu(food.id)" class="bg-red-500 m-1">
-              <img src="../assets/delete.svg" alt="" />
+              <img src="../assets/delete.svg" alt="" width="20" height="12"/>
             </button>
+          </base-card>
           </li>
-        </base-card>
+
       </ul>
     </div>
   </div>

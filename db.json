@@ -13,20 +13,25 @@
     {
       "name": "Buttermilk Pancake",
       "type": "Breakfast",
-      "id": 4
+      "id": 3
     },
     {
       "name": "Boba Brown Sugar",
       "type": "Beverages",
-      "id": 5
+      "id": 4
     },
     {
       "name": "Two Tone Kakigori",
       "type": "Kakigori",
-      "id": 6
+      "id": 5
     },
     {
       "name": "Matcha Toast",
+      "type": "Toast",
+      "id": 6
+    },
+    {
+      "name": "Thai Tea Toast",
       "type": "Toast",
       "id": 7
     }

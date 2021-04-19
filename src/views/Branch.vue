@@ -1,8 +1,8 @@
 <template>
   <div
-    class="flex flex-col justify-items-start shadow-xl rounded-lg p-2 branch"
+    class="flex flex-col justify-items-start shadow-xl rounded-lg p-2 branch border-4 border-green-400"
   >
-    <h1 class="text-gray-900 text-opacity-100 font-semibold text-xl tracking-widest">BRANCHES</h1>
+    <h1 class="text-gray-900 text-opacity-100 font-semibold text-xl tracking-widest pt-4">BRANCHES</h1>
     <p class="text-gray-900 text-opacity-100 font-semibold text-xl">Find your nearest branches</p>
     <ul>
       <branch-list

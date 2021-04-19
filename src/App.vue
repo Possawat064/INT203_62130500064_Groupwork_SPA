@@ -1,5 +1,5 @@
 <template>
-  <div id="nav" class="bg-gradient-to-br from-yellow-200 to-yellow-50">
+  <div id="nav" class="bg-gradient-to-br from-yellow-200 to-yellow-50 flex justify-center border-4 border-green-400">
     |<router-link class="px-2" to="/">Home</router-link> |
     <router-link class="px-2" to="/about">About</router-link> |
     <router-link class="px-2" to="/branch">Branch</router-link> |
@@ -16,7 +16,6 @@ export default {};
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 
